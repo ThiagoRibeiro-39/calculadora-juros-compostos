@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 90%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #070707;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #bdbaba;
+}
+
+table{
+    -webkit-box-shadow: 17px 18px 5px 5px rgba(0,0,0,0.58);
+-moz-box-shadow: 17px 18px 5px 5px rgba(0,0,0,0.58);
+box-shadow: 17px 18px 5px 5px rgba(0,0,0,0.58);
+}
+
+
+
+
