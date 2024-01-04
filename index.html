@@ -4,34 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juros Compostos</title>
-    <link rel="stylesheet" href="tabela.css">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <h1>Calculadora de Juros Compostos</h1><hr>
-    <label for="principal">Valor Inicial:</label>
-    <input type="number" id="principal" placeholder="Insira o valor inicial">
-
-    <label for="rate">Taxa de Juros (% ao dia):</label>
-    <input type="number" id="rate" placeholder="Insira a taxa de juros">
-
-    <label for="days">Número de Dias:</label>
-    <input type="number" id="days" placeholder="Insira o número de dias">
-
-    <button onclick="calcularJuros()">Calcular</button>
-    <button onclick="limparFormulario()">Limpar</button>
-    
-    <table id="resultTable">
+    <main id="container">
+        <div id="calculator">
+     <h1>Calculadora de Juros Compostos</h1><hr>
      
-        <tr>
-            <th>Dia</th>
-            <th>Valor Acumulado</th>
-        </tr>
+        <div id="input_box">
+         <div class="input-field">
+           <label for="principal">Valor Inicial:</label>
+           <input type="number" id="principal" placeholder="Insira o valor inicial">
+        </div> 
+    
+        <div class="input-field">
+           <label for="fee">Taxa de Juros (% ao dia):</label>
+           <input type="number" id="fee" placeholder="Insira a taxa de juros">
+        </div>
 
-    </table>
+        <div class="input-field">
+           <label for="days">Número de Dias:</label>
+           <input type="number" id="days" placeholder="Insira o número de dias">
+        </div>
+    
+    
+        <div id="result">
+         <h4>Total:</h4>
+         <span id="total">
+            R$ 0.00
+         </span>
+       </div>
+     <button id="calculate">Calcular</button>
+     <button id="limpar">Limpar</button>
+         </div>
+      </div>
+    </main>
+        
+        <!--<table id="resultTable">
+        
+           <tr>
+             <th>Dia</th>
+             <th>Valor Acumulado</th>           
+           </tr>
+
+        </table> -->
    
       
 
-    <script src="calculo.js"></script>
+    <script type="text/javascript" src="calcular.js"></script>
 </body>
 </html>
